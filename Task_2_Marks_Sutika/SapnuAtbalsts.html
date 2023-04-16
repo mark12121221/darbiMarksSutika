@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>lapa</title>
 
- <link rel="stylesheet" href="./assets/css/styleAtbalsts.css" >
+ <link rel="stylesheet" href="./assets/css/stylePiesaki.css" >
 
 </head>
 <body>
@@ -22,25 +22,61 @@
 </select></div>
 <div class="11" onclick="window.location.href='../Task_2_Marks_Sutika/index.html'">
 	<img src="./assets/img/BlackLogo.jpg" alt=""></div>
-<p id="title">Sāc taisīt savu iedvesmas stāstu kopā ar mūsu komandu</p>
-<div class="galery">
-	<img id="coaches" src="./assets/img/juris2.png" alt=""></div>
-<img id="coaches2" src="./assets/img/Rectangle40.png" alt="">
-<div class="right-button" id="gallery2" onclick="changeText()"><img src="./assets/img/Poga1.png" alt=""></div>
-<p id="komanda">Juris Gogulis<br>  Idejas ģenerators un režisors</p>
+<p id="title">Piesaki Sapni</p>
+<p id="text">Tev ir iespēja pieteikt personīgo vai profesionālo sapni.</p>
+<div class="foto1"><img src="./assets/img/Group12.png" alt=""></div>
+<div class="foto2"><img src="./assets/img/Group13.png" alt=""></div>
+<p id="PersonSapnis">Personigais Sapnis</p>
+<p id="PersonSapnis-text">Bērnības nepiepildītie sapņi... No sev piederoša svaigi spiestas sulas bāra uz Tērbatas ielas līdz iespējai satikties ar Džekiju Čanu.</p>
+<p id="ProfesSapnis">Profesionalais Sapnis</p>
+<p id="ProfesSapnis-text">Sapnis vai ideja, kura ir balstīta uz reģiona, pasaules vai cilvēku attīstību 4 virzienos - kultūra, izglītība, zinātne, ģimene jeb sociālā vide. Tā ir iespēja attīstīt ideju, kas uzlabotu ikdienas dzīves kvalitāti vai atrisinātu vietēja vai starptautiska līmeņa problēmu. Pastāsti, kāpēc Tev tas ir tik nozīmīgi?</p>
 
+<div class="foto-middle-1">
+<img src="./assets/img/Brinumameita1.png" alt="">
+</div>
+<div class="foto-middle-2">
+<img src="./assets/img/Brinumameita2.png" alt="">
+</div>
+<div class="foto-middle-3">
+<img src="./assets/img/Brinumameita3.png" alt="">
+</div>
+<div class="foto-middle-4">
+<img src="./assets/img/Brinumameita4.png" alt="">
+</div>
+<div class="foto-middle-5">
+<img src="./assets/img/Brinumameita5.png" alt="">
+</div>
+<div class="middle-ripped-up"><img src="./assets/img/ripped_6_8.png" alt="">
+</div>
+
+<div class="middle-ripped-down"><img src="./assets/img/ripped_6_8.png" alt="">
+</div>
+<div class="form-1">
+SAZINĀTIES AR MUMS
+
+</div>
+<form name="myForm" method="post" onsubmit="return validateForm()"> 
+ <div class="name"><label for="fname"></label><input type="text" id="fname" name="fname" placeholder="Vārds, Uzvārds*" required></div>
+ <div class="mail"><label for="e-mail"></label><input type="text" id="e-mail" name="e-mail" placeholder="E-pasts*" required><br><br></div>
+ <div class="phone"><label for="phone"></label><input type="text" id="phone" name="phone" placeholder="Telefons*" required><br><br></div>
+ <div class="coment"><label for="comment"></label><input type="text" id="comment" name="comment" placeholder="Jautājums, vai komentārs*" required></div>
+ <div class="form-2"><p>* obligāti aizpildāmie lauki</p></div>
+ <input type="checkbox" id="check" name="check" value="agree" required>
+ <label for="check" id="Pcheck" >Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label><br>
+
+ <button type="submit" onsubmit="window.location.href='../Task_2_Marks_Sutika/formaSutisana.html'" id="B3">Sūtīt</button>
+</form>
 
 <footer>
 <div class="foot2"></div>
 <div class="foot-logo"><img src="./assets/img/GoldenV2Logo.png" alt=""></div>
 <div class="apks-text1">© SparkleHeart 2020. Visas tiesības aizsargātas.</div>
-<div class="foot-idea">Ideja</div>
-<div class="foot-piesaki">Piesaki Sapni</div>
-<div class="foot-uznem">Uzņēmējiem</div>
-<div class="foot-sapnu-b">Sapņu banka</div>
-<div class="foot-sapnu-a">Sapņus atbalsta</div>
-<div class="foot-iedvesma">Iedvesmas stāsti</div>
-<div class="foot-biedriba">Biedrība SparkleHeart</div>
+<div class="foot-idea" onclick="window.location.href='../Task_2_Marks_Sutika/ideja.html'">Ideja</div>
+<div class="foot-piesaki" onclick="window.location.href='../Task_2_Marks_Sutika/PiesakiSapni.html'">Piesaki Sapni</div>
+<div class="foot-uznem" onclick="window.location.href='../Task_2_Marks_Sutika/uznemejiem.html'">Uzņēmējiem</div>
+<div class="foot-sapnu-b" onclick="window.location.href='../Task_2_Marks_Sutika/SapnuBanka.html'">Sapņu banka</div>
+<div class="foot-sapnu-a" onclick="window.location.href='../Task_2_Marks_Sutika/SapnuAtbalsts.html'">Sapņus atbalsta</div>
+<div class="foot-biedriba" >Biedrība SparkleHeart</div>
 <div class="foot-reg-nr">Reģistrācijas nr. 40008293119</div>
 <div class="foot-banka">Banka: SWEDBANK A/S</div>
 <div class="foot-lv52">LV52HABA0551047652465</div>
@@ -48,43 +84,73 @@
 <div class="foot-mail">
 juris.gogulis@sparkleheart.org</div>
 <div class="foot-tel">+37126890034</div>
-<div class="foot-adress">Biķernieku iela 24a - 5, LV-1006</div>
+<a href="https://www.google.com/maps/place/Bi%C4%B7ernieku+iela+24A,+Vidzemes+priek%C5%A1pils%C4%93ta,+R%C4%ABga,+LV-1006/@56.9702273,24.1812923,17z/data=!3m1!4b1!4m6!3m5!1s0x46eece5e0ade6659:0xa50c82ee82c56df0!8m2!3d56.9702273!4d24.1838726!16s%2Fg%2F11qm6d_23d" target="_blank"><div class="foot-adress" >Biķernieku iela 24a - 5, LV-1006</div></a>
 <div class="foot-politika">Privātuma politika</div>
 
 
 
-<div class="facebook"><img src="./assets/img/facebook.png" alt=""></div>
-<div class="insta"><img src="./assets/img/insta.png" alt=""></div>
+<a href="https://www.facebook.com/sparkleheartLV" target="_blank">
+  <div class="facebook">
+    <img src="./assets/img/facebook.png" alt="">
+  </div>
+</a>
+
+<a href="https://www.instagram.com/sparkleheart_org/" target="_blank">
+  <div class="insta">
+    <img src="./assets/img/insta.png" alt="">
+  </div>
+</a>
 
 </footer>
 <script>
-var images = ["./assets/img/juris2.png","./assets/img/girts.png" , "./assets/img/janis.png"];
+function validateForm() {
+  var name = document.forms["myForm"]["fname"].value;
+  var email = document.forms["myForm"]["e-mail"].value;
+  var phone = document.forms["myForm"]["phone"].value;
+  var comment = document.forms["myForm"]["comment"].value;
+  
+  if (name.length>70){
+    alert("Vardam un Uzvardam jabut isakiem par 70 simboliem");
+    return false;
+  }
+  
 
-var img = document.getElementById("coaches");
-var button = document.getElementById("gallery2");
-
-var imageIndex = 0;
-
-button.addEventListener("click", function() {
-  imageIndex++;
-
-  if (imageIndex >= images.length) {
-    imageIndex = 0;
+  if (!isValidEmail(email)) {
+    alert("Please enter a valid email address");
+    return false;
   }
 
-  img.src = images[imageIndex];
+  if (!validatePhone(phone)){   
+    alert("Please enter a valid phone number");
+    return false;
+  }
+  else if(phone<37120000000 ||phone>37129999999){
+    alert("Ievadiet Latvijas telefona ar valsts kodu bez + zimes");
+    return false;}
+
+  
+  return true;
+}
+function isValidEmail(email) {
+  var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return regex.test(email);
+}
+function validatePhone(phone) {
+  var pattern = /^\d+$/; 
+  return pattern.test(phone);
+}
+
+const button = document.getElementById("B3");
+
+
+button.addEventListener("mouseover", function() {
+  button.style.backgroundColor = "#FFCB66";
 });
 
-function changeText() {
-  var text = document.getElementById("komanda");
-  if (text.innerHTML === "Juris Gogulis<br>  Idejas ģenerators un režisors") {
-    text.innerHTML = "Ģirts Ceriņš<br>  Operators un montāžas speciālists";
-  } else if (text.innerHTML === "Ģirts Ceriņš<br>  Operators un montāžas speciālists") {
-    text.innerHTML = "Jānis Zurģis<br>  Animācijas un grafiskā dizaina<br> meistars";
-  } else {
-    text.innerHTML = "Juris Gogulis<br>  Idejas ģenerators un režisors";
-  }
-}
+button.addEventListener("mouseout", function() {
+  button.style.backgroundColor = "#C4C4C4";
+});
+
 </script>
 </body>
 </html>
