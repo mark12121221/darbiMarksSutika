@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>lapa</title>
+
+ <link rel="stylesheet" href="./assets/css/styleideja.css" >
+
+</head>
+<body>
+<div class="stripe"><img src="./assets/img/Vector2.png" alt=""></div>
+<div class="head-1" onclick="window.location.href='../Task_2_Marks_Sutika/ideja.html'">Ideja</div>
+<div class="head-2" onclick="window.location.href='../Task_2_Marks_Sutika/Piesakisapni.html'">Piesaki sapni</div>
+<div class="head-3" onclick="window.location.href='../Task_2_Marks_Sutika/uznemejiem.html'">Uzņēmējiem</div>
+<div class="head-4" onclick="window.location.href='../Task_2_Marks_Sutika/SapnuBanka.html'">Sapņu banka</div>
+<div class="head-5" onclick="window.location.href='../Task_2_Marks_Sutika/SapnuAtbalsts.html'">Sapņu atbalsts</div>
+<div class="head-7"><select>
+  <option value="value1">LV</option>
+  <option value="value2">EN</option>
+  <option value="value3">RU</option>
+</select></div>
+<div class="11" onclick="window.location.href='../Task_2_Marks_Sutika/index.html'">
+	<img src="./assets/img/BlackLogo.jpg" alt=""></div>
+<div class="title">Ideja</div>
+<div class="text-ideja">Juris Gogulis ir pasaules iedvesmots mākslinieks–horeogrāfs un režisors, kura ikdiena aizrit radot aizkustinošus un iedvesmojošus radošus projektus. Juris ir pārliecināts, ka ir vērts ticēt katram savam sapnim un censties to īstenot. Kā smejas pats - daudzu draugu sapņiem viņš tic vairāk, nekā viņi paši!</div>
+<div class="middle-foto"><img src="./assets/img/Juris.png" alt=""></div>
+<div class="middle-foto2"><img src="./assets/img/Rectangle38.png" alt=""></div>
+<div class="middle-ripped-up"><img src="./assets/img/ripped_6_8.png" alt="">
+</div>
+<p id="author">Ken Ludden</p>
+<p id="author-post">Director, Margot Fonteyn Academy of Ballet</p>
+<p id="author-text">For it is Juris work that is the light the human race needs so badly these days. His vision is inspired and talent is beyond measure.</p>
+<div class="left-button" id="myText" onclick="changeText2()"><img src="./assets/img/Poga.png" alt=""></div>
+<div class="right-button" id="myText2" onclick="changeText()"><img src="./assets/img/Poga1.png" alt=""></div>
+<div class="middle-ripped-down"><img src="./assets/img/ripped_6_8.png" alt="">
+</div>
+<div class="text-on-foto">“Kopš 3 gadu vecuma mani ir audzinājusi mamma, pēc viņas piemēra esmu sapratis, cik sieviete ir spēcīga un varoša. Vēlos atlīdzināt un izveidot platformu, kurā satikties un palīdzēt cilvēkiem piepildīt savus sapņus.”</div>
+<div class="foot2"></div>
+<div class="foot-logo"><img src="./assets/img/GoldenV2Logo.png" alt=""></div>
+<div class="apks-text1">© SparkleHeart 2020. Visas tiesības aizsargātas.</div>
+<div class="foot-idea">Ideja</div>
+<div class="foot-piesaki">Piesaki Sapni</div>
+<div class="foot-uznem">Uzņēmējiem</div>
+<div class="foot-sapnu-b">Sapņu banka</div>
+<div class="foot-sapnu-a">Sapņus atbalsta</div>
+<div class="foot-iedvesma">Iedvesmas stāsti</div>
+<div class="foot-biedriba">Biedrība SparkleHeart</div>
+<div class="foot-reg-nr">Reģistrācijas nr. 40008293119</div>
+<div class="foot-banka">Banka: SWEDBANK A/S</div>
+<div class="foot-lv52">LV52HABA0551047652465</div>
+<div class="foot-vards">Juris Gogulis</div>
+<div class="foot-mail">
+juris.gogulis@sparkleheart.org</div>
+<div class="foot-tel">+37126890034</div>
+<div class="foot-adress">Biķernieku iela 24a - 5, LV-1006</div>
+<div class="foot-politika">Privātuma politika</div>
+
+
+
+<div class="facebook"><img src="./assets/img/facebook.png" alt=""></div>
+<div class="insta"><img src="./assets/img/insta.png" alt=""></div>
+<script>
+function changeText() {
+  var text = document.getElementById("author-text");
+  if (text.innerHTML === "For it is Juris work that is the light the human race needs so badly these days. His vision is inspired and talent is beyond measure.") {
+    text.innerHTML = "Jo tieši Jura darbs ir gaisma, kas mūsdienās tik ļoti vajadzīga cilvēcei. Viņa vīzija ir iedvesmota,\nun talants ir neizmērojams.";
+  } else if (text.innerHTML === "Jo tieši Jura darbs ir gaisma, kas mūsdienās tik ļoti vajadzīga cilvēcei. Viņa vīzija ir iedvesmota,\nun talants ir neizmērojams.") {
+    text.innerHTML = "Ибо именно работа Юры является светом, в котором так остро нуждается человечество в наши дни. Его видение вдохновлено,\nа талант неизмерим.";
+  } else {
+    text.innerHTML = "For it is Juris work that is the light the human race needs so badly these days. His vision is inspired and talent is beyond measure.";
+  }
+}
+function changeText2() {
+  var text = document.getElementById("author-text");
+  if (text.innerHTML === "For it is Juris work that is the light the human race needs so badly these days. His vision is inspired and talent is beyond measure.") {
+    text.innerHTML = "Ибо именно работа Юры является светом, в котором так остро нуждается человечество в наши дни. Его видение вдохновлено,\nа талант неизмерим."; 
+  } else if (text.innerHTML === "Ибо именно работа Юры является светом, в котором так остро нуждается человечество в наши дни. Его видение вдохновлено,\nа талант неизмерим.") {
+    text.innerHTML = "Jo tieši Jura darbs ir gaisma, kas mūsdienās tik ļoti vajadzīga cilvēcei. Viņa vīzija ir iedvesmota,\nun talants ir neizmērojams."; 
+  } else {
+    text.innerHTML = "For it is Juris work that is the light the human race needs so badly these days. His vision is inspired and talent is beyond measure.";
+  }
+}
+
+</script>
+</body>
+</html>

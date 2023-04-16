@@ -1,0 +1,419 @@
+html{
+position: relative;
+width: 1460px;
+height: 1200px;
+
+background: #FFFFFF;
+opacity: 100%;}
+.stripe{
+position: absolute;
+width: 121px;
+height: 0px;
+left: 1045px;
+top: 70px;
+
+border: 3px #FFA800;}
+.11{
+position: absolute;
+width: 159px;
+height: 146px;
+left: 62px;
+top: 0px;
+
+background: url(BlackLogo);}
+
+.head-1{
+position: absolute;
+width: 46px;
+height: 24px;
+left: 305px;
+top: 51px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #060606;
+}
+.head-2{
+position: absolute;
+width: 130px;
+height: 24px;
+left: 436px;
+top: 51px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #060606;
+}
+.head-3{
+position: absolute;
+width: 120px;
+height: 24px;
+left: 643px;
+top: 51px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #060606;
+
+}
+.head-4{
+position: absolute;
+width: 123px;
+height: 45px;
+left: 858px;
+top: 51px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #060606;
+}
+.head-5{
+position: absolute;
+width: 153px;
+height: 45px;
+left: 1056px;
+top: 51px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #060606;
+}
+.head-7{
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1275px;
+top: 51px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #060606;
+}
+#title{
+position: absolute;
+width: 608px;
+height: 52px;
+left: 450px;
+top: 176px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 71px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2F4858;}
+#coaches{
+position: absolute;
+width: 352px;
+height: 443px;
+left: 570px;
+top: 400px;
+}
+#coaches2{
+position: absolute;
+width: 352px;
+height: 443px;
+left: 570px;
+top: 400px;
+}
+
+
+.foot2{
+position: absolute;
+width: 1460px;
+height: 290.68px;
+left: 0px;
+top: 91%;
+background: #2F4858;}
+
+.foot-logo{
+position: absolute;
+left: 4.54%;
+right: 82.14%;
+top: 93%;
+bottom: 32.18%;
+}
+.apks-text1{position: absolute;
+left: 4.54%;
+right: 82.14%;
+top:111%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+color: #FFFFFF;}
+.facebook{position: absolute;
+left: 89.39%;
+right: 9.3%;
+top:107%;}
+.insta{
+position: absolute;
+left: 92.83%;
+right: 4.54%;
+top:107%;
+}
+.foot-idea{position: absolute;
+left: 28.11%;
+right: 66.91%;
+top: 93%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-piesaki{position: absolute;
+left: 27.89%;
+right: 58.78%;
+top: 95%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-uznem{position: absolute;
+left: 27.89%;
+right: 59%;
+top: 97%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-sapnu-b{position: absolute;
+left: 27.89%;
+right: 63.1%;
+top: 99%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-sapnu-a{position: absolute;
+left: 27.89%;
+right: 59%;
+top:101%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-iedvesma{position: absolute;
+left: 27.89%;
+right: 59%;
+top:103%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-biedriba{position: absolute;
+left: 47%;
+right: 31.99%;
+top: 93%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFFFFF;}
+.foot-reg-nr{position: absolute;
+left: 47%;
+right: 32.58%;
+top: 95%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-banka{
+position: absolute;
+left: 47%;
+right: 32.58%;
+top: 97%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;}
+.foot-lv52{position: absolute;
+left: 47%;
+right: 32.58%;
+top: 99%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;}
+.foot-vards{position: absolute;
+left: 81.99%;
+right: 4.69%;
+top: 93%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+text-align: right;
+
+color: #FFFFFF;}
+.foot-mail{position: absolute;
+left: 66.47%;
+right: 4.69%;
+top: 95%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: right;
+
+color: #FFFFFF;}
+.foot-tel{position: absolute;
+
+right: 4.69%;
+top: 97%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FFFFFF;}
+.foot-adress{position: absolute;
+
+right: 4.69%;
+
+top: 99%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #FFFFFF;}
+.foot-politika{position: absolute;
+left: 81.55%;
+right: 4.54%;
+top:111%;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: right;
+
+color: #FFFFFF;}
+#komanda{
+position: absolute;
+width: 352px;
+height: 95px;
+left: 630px;
+top: 700px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #FFFFFF;}
+.right-button{
+position: absolute;
+width: 352px;
+height: 443px;
+left: 900px;
+top: 600px;
+}
