@@ -1508,13 +1508,14 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
             char1.talk "Sorry [char1.playername], but I'm not in the mood right now. Maybe another time."
             pl "That's a pity, but I understand."
             return "do_return"
+        #Tiek uzlikti maksimālās vērtības meiteņu rakstura īpašībām 
         $ char1.change_lust(100)
         $ char1.change_affection(100)
         #$ char1.change_love_max(100)
         $ char1.change_love(100)
         char1.talk "I'd love to. I thought you'd never ask."
         char1.talk "What kind of my nightwear do you want to see?"
-        menu:
+        menu:#izvēlne, kurā spēlētājs izvēlās kurā apģērbā meitene turpinās spēli
             "1st nightwear":
                 pl "1st nightwear"
                 $char1.nightwear = 0
@@ -1524,46 +1525,41 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
                 $char1.nightwear = 1
                 char1.talk "Do you like it?"
                 pl "Sure"
-            "3rd nightwear" if char1.id != delizia.id:
+            "3rd nightwear":
                 pl "3rd nightwear"
                 $char1.nightwear = 2
-            "4th nightwear" if char1.id == sara.id or char1.id == aly.id:
+            "4th nightwear" if char1.id == sara.id or char1.id == aly.id:#4 apģērbs ir pieejams tikai 2 meitenēm,tāpec dotā izvēle parādīsies tikai izvēloties Saru vai Aly
                 pl "4th nightwear"
                 $char1.nightwear = 3
         char1.talk "Do you want to know some very interesting information about me?"
-        menu:
-                "Yes, of course":
+        menu:#Izvēlne spēlētājs var uzzināt, kas viņu gaida
+                "Yes, of course":#Spēlētājs izvēlējās uzzināt informāciju
                     ###1-yes; 0,2-no
-                    if char1.id ==alice.id: 
+                    if char1.id ==alice.id:#Izvēlētie varoņi kam tiek piemērots kods iekš if 
                         if char1.nightwear==1:
-                            char1.talk "When I get drunk, I want a sequel"
+                            char1.talk "A little surprise awaits you"
                             pl "Okay"
                         elif char1.nightwear==0 or char1.nightwear==2:
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     char1.talk "Where we will sit?"
                                 "No, that's not interesting ":
-                                    jump action_nightbar_drink_end
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
                     if char1.id ==aly.id: 
-                        if char1.nightwear==0:
-                            char1.talk "When I get drunk, I want a sequel"
-                            pl "Okay"
-                        elif char1.nightwear==1 or char1.nightwear==2:
+                        if char1.nightwear==0 or char1.nightwear==1 or char1.nightwear==2 or char1.nightwear==3:#Apģērbu numuri, kuriem tiek pimērots kods iekš if
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     char1.talk "Where we will sit?"
                                 "No, that's not interesting ":
-                                    jump action_nightbar_drink_end
-                        else:
-                            char1.talk "A little surprise awaits you"
-                            pl "Well"
-                    ###0-yes; 1- yes ,2- no            
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
+                        
+                              
                     if char1.id ==amy.id: 
                         if char1.nightwear==0:
                             char1.talk "When I get drunk, I want a sequel"
@@ -1575,16 +1571,16 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     "..."
                                 "No, that's not interesting":
-                                    jump action_nightbar_drink_end
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
                     if char1.id == delizia.id or char1.id == desire.id or char1.id == eva.id or char1.id == heather.id:
                         char1.talk "If I get drunk, I'll want to sleep"
                         pl "Ohhh"
                         "Continue this scene?"
-                        menu:
+                        menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                             "Sure":
                                 "..."
                             "No, that's not interesting":
@@ -1597,11 +1593,11 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     char1.talk "Where we will sit?"
                                 "No, that's not interesting ":
-                                    jump action_nightbar_drink_end
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
                         elif char1.nightwear == 1:
                             char1.talk "When I get drunk, I want to dance"
                         else:
@@ -1609,17 +1605,21 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
                             pl "Well"
                     if char1.id == jessica.id or char1.id == natasha.id:
                         if char1.nightwear == 2:
-                            char1.talk "When I get drunk, I want a sequel"
-                            pl "Okay"
-                        elif (char1.id == lacey.id or char1.id == jessica.id) and (char1.nightwear == 0 or char1.nightwear == 1):
+                            if char1.id == jessica.id:
+                                char1.talk "When I get drunk, I want a sequel"
+                                pl "Okay"
+                            elif char1.id == natasha.id:
+                                char1.talk "A little surprise awaits you"
+                                pl "Okay"
+                        elif (char1.id == natasha.id or char1.id == jessica.id) and (char1.nightwear == 0 or char1.nightwear == 1):
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     "..."
                                 "No, that's not interesting":
-                                    jump action_nightbar_drink_end
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
                                 
                     
                     if char1.id ==lacey.id:
@@ -1630,11 +1630,11 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     char1.talk "Where we will sit?"
                                 "No, that's not interesting ":
-                                    jump action_nightbar_drink_end
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
                     if char1.id == ivy.id:
                         if char1.nightwear ==1:
                             char1.talk "A little surprise awaits you"
@@ -1643,25 +1643,28 @@ label action_nightbar_drink(char1, i_auto_succeed=False, i_show_intro=True):
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     char1.talk "Where we will sit?"
                                 "No, that's not interesting ":
-                                    jump action_nightbar_drink_end
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
                     if char1.id == yvette.id:
                         if char1.nightwear == 0:
                             char1.talk "If I get drunk, I'll want to sleep"
                             pl "Ohhh"
                             "Continue this scene?"
-                            menu:
+                            menu:#Izvēlne, kurā spēlētājs var turpināt vai atteikties no tālākā sižeta, jo viņš uzzināja, ka meitene gribēs gulēt
                                 "Sure":
                                     char1.talk "Where we will sit?"
                                 "No, that's not interesting ":
-                                    jump action_nightbar_drink_end
-                        else:
+                                    jump action_nightbar_drink_end#pariet uz labelu, kurš atgriež sākotnējo nakts kluba saskarni
+                        elif char1.nightwear == 1:
                             char1.talk "A little surprise awaits you"
                             pl "Well"
-                "No, let's keep it a secret for now":
+                        else:
+                            char1.talk "When I get drunk, I want a sequel"
+                            pl "Well"
+                "No, let's keep it a secret for now":#Spēlētājs atsakās uzzināt informaciju un turpina spēli
                     char1.talk "Really?"
                     
                 
