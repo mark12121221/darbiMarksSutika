@@ -1077,11 +1077,12 @@ label talk_reception:
                         if attempts==5:
                             $answer5 = girl_name
                             
-                    if attempts == 5:
-                        jobs.reception.talk"Unfortunately you have not earned anything"
-                    elif correct_answers == 3:
+                    if correct_answers == 3:
                         jobs.reception.talk"Congratulations!!! You win 100"
                         $player.change_company_favor(100)#Spēlētājam tiek ieskaitītas 100 monētas
+                        jobs.reception.talk"Unfortunately you have not earned anything"
+                    elif attempts == 5:
+                        jobs.reception.talk"Unfortunately you have not earned anything"
                 "Answer the question and get 200 company favor":#spēlētājam ir iespēja nopelnīt 200 monētas
                     jobs.reception.talk "How many girls are on the island now?"
                     menu:

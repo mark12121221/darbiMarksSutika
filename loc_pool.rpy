@@ -156,7 +156,7 @@ label action_pool_sunbed(char1, i_auto_succeed=False, i_intro=True):
         call action_pool_sunbed_yvette_menu () from _call_action_pool_sunbed_yvette_menu
         jump action_pool_sunbed_end
     menu:
-        "Play game with [char1.fname]" if char1.id == alice.id and option0:#Parādās tikai tādā gadijumā, ja izvēlētā meitene ir Alise un līdz šim šodien netika spēlēta spēle
+        "Play game with [char1.fname]" if char1.id == alice.id and option0 == True:#Parādās tikai tādā gadijumā, ja izvēlētā meitene ir Alise un līdz šim šodien netika spēlēta spēle
             $numbers= True
             $option0 = False
             $answer1=0
@@ -165,9 +165,9 @@ label action_pool_sunbed(char1, i_auto_succeed=False, i_intro=True):
             $correct_answers_pool_alice = 0
             pl "Guess, what number I made up?"
             $ num_input2 = renpy.input("Enter a number from 1 to 10", length=3)# Spēlētājs ievada skaitli no 1 līdz 10 
-            while not num_input2.isdigit() and num_input2<1 or num_input2>10 :#Tiek pārbaudīts vai ir derīgs ievadītais simbols
+            while not (num_input2.isdigit() and 1 <= int(num_input2) <= 10):
                 "Please enter a number from 1 to 10"
-                $ num_input2 = renpy.input("Enter a number from 1 to 10", length=3)
+                $num_input2 = renpy.input("Enter a number from 1 to 10", length=3)
             $num_input2 = int(num_input2)
             while attempts_pool_alice < 3 and correct_answers_pool_alice < 1:#Spēle beidzas, kad meitene iztērē 3 iespējas vai uzmina skaitli
                 $new_rand = renpy.random.randint(1, 10)#Meitene min skaitļus ar nejaušo skaitļu no 1 līdz 10 palīdzību
@@ -188,7 +188,7 @@ label action_pool_sunbed(char1, i_auto_succeed=False, i_intro=True):
                     $attempts_pool_alice +=1
                     pl"You are wrong! "
                     char1.talk"Your [attempts_pool_alice]/3 attempts."
-            if correct_answers_pool_alice == 1:#Meitene ir uzminējusi skaitli un viņu apsveic ar uzvaru
+            if correct_answers_pool_alice == 1:# Meitene ir uzminējusi skaitli un viņu apsveic ar uzvaru
                 "Congratulations, you guessed it"
             else:#Meitene ir neuzminējusi skaitli un spēlētājam parādās izvēlne ar sižeta turpinājumiem 
                 char1.talk "Сhoose what you want to do?"
@@ -401,6 +401,7 @@ label action_pool_sunbed(char1, i_auto_succeed=False, i_intro=True):
                         pl "Uhmm no, that's not what I meant..."
                         char1.talk "*sulks*"
                         "Damn that didn't come out right..."
+                        
 
         "Ask her if she needs some sun lotion applied to her back" if option2 and char1.get_action_icon_available("pool_sunlotion"):
             $ option2 = False
