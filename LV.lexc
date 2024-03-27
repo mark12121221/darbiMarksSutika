@@ -1,1 +1,23 @@
+Multichar_Symbols +N +Sg +Pl +Nom +Gen +Dat +Acc +Loc
+
+LEXICON Root						
+Noun ;
+
+LEXICON Noun
+
+vej N1dekl;
+
+
+LEXICON N1dekl					
++N+Sg+Nom:^š  # ;
++N+Sg+Gen:^a # ;
++N+Sg+Dat:^am # ;
++N+Sg+Acc:^u # ;
++N+Sg+Loc:^ā # ;
++N+Pl+Nom:^i  # ;
++N+Pl+Gen:^u  # ;
++N+Pl+Dat:^iem # ;
++N+Pl+Acc:^us # ;
++N+Pl+Loc:^os # ;
+
 
